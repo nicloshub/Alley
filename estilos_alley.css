@@ -1,0 +1,339 @@
+:root {
+    --alto-header: 60px;
+    font-size: 16px;
+}
+
+:any-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 2px solid red; */
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+.encabezado {
+    height: fit-content;
+    width: 100%;
+    background-color: #CC3B35;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    width: 80px;
+    height: 30px;
+    margin: 10 0 10 40;
+    
+}
+
+.logo img {
+    height: 100%;
+    
+}
+
+.menu li {
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-block;
+    margin: 0 30px;
+    text-align: center;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+}
+
+.menu li:hover {
+    text-decoration: underline;
+}
+
+.superior {
+    background-color: #CC3B35;
+    height: 60vh;
+    border-bottom: 3px solid #a72e2a;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-image: url("jumbotron2.png");
+    background-position: bottom right;
+    background-size: 55%;
+    background-repeat: no-repeat;
+    width: 100%;
+    
+}
+
+.textos {
+    width: 700px;
+    margin-left: 20%;
+}
+
+h1, h2 {
+    color: #FFFFFF;
+    font-family: 'Frank Ruhl Libre', serif;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: 400;
+    width: 740px;
+    line-height: 1.15;
+}
+
+.inferior {
+    height: 100vh;
+}
+
+.contenido {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloque_imagen {
+    position: relative;
+    z-index: -2;
+    
+}
+
+.bloque_imagen img {
+    height: 85%;
+}
+
+.seguir_enlace {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 8%;
+}
+
+.bloque_info {
+    position: relative;
+    right: 2%;
+    background-color: #FFFFFF;
+    height: auto;
+    width: 40%;
+    padding: 50;
+    text-align: left;
+    z-index: -1;
+}
+
+.bloque_info img {
+    height: 60px;
+    margin-bottom: 20;
+}
+
+.bloque_info p {
+    color: #393d43;
+    font-family: 'Roboto';
+    font-size: 1.1rem;
+    line-height: 1.9;
+}
+
+.clasificaciones li {
+    display: inline;
+    text-transform: capitalize;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #393d43;
+}
+
+.clasificaciones {
+    width: 90%;
+    margin-bottom: 20;
+}
+
+.seleccionar_empresa {
+    width: 80%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.seleccionador li {
+    list-style: none;
+    display: flex;
+    height: 60%;
+    width: 15%;
+    margin: 0 20;
+    padding: 10 10 10 10;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+    min-height: 100px;
+    border-top: 4px solid #cc3a3500;
+}
+
+.seleccionador li img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+#empresa1 img, #empresa4 img {
+    width: auto;
+    height: 100%;
+}
+
+.seleccionador li:hover {
+    border-top: 4px solid #838383;
+}
+
+.seleccionador li:active{
+    border-top: 4px solid #CC3B35;
+}
+
+.servicios {
+    background-color: #fbfcfa;
+    border-top: 1px solid #bcbdbb60;
+    border-bottom: 1px solid #bcbdbb60;
+    height: 75vh;
+    padding: 4% 0 4% 0;
+}
+
+.servicios img {
+    /* border: 2px solid red; */
+    width: 400px;
+    max-height: 100%;
+    position: relative;
+    float: right;
+    bottom: 18rem;
+}
+
+.contenedor_servicios {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+}
+
+h4 {
+    font-family: 'Frank Ruhl Libre';
+    font-size: 5rem;
+    color: #393D43;
+    /* margin-bottom: 20; */
+    /* border: 2px solid red; */
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info p {
+    width: 80%;
+    margin: 0 4rem 0 4rem;
+}
+
+.info ul {
+    list-style: none;
+    /* border: 2px solid red; */
+    font-family: 'Roboto';
+}
+
+.lista_izq li {
+    /* border: 2px solid red; */
+    font-size: 1.1rem;
+    margin: 0;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    border-bottom: 1px solid #d8d8d8;
+    width: 250px;
+}
+
+.lista_izq li:hover {
+    border-bottom: 2px solid #CC3B35;
+    color: #CC3B35;
+}
+
+.info p {
+    font-family: 'Frank Ruhl Libre';
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    padding-top: 1rem;
+}
+
+.info a, h5 {
+    font-family: 'Roboto';
+}
+
+.info a {
+    display: block;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    margin-bottom: 6%;
+    /* border: 2px solid red; */
+}
+
+h5 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #45494e;
+    margin-bottom: 25;
+}
+
+.seccion_novedades {
+    border: 2px solid red;
+    background-color: #FFFFFF;
+    height: 40rem;
+}
+
+.novedades_contenedor {
+    width: 60%;
+    height: 100%;
+    border: 2px solid red;
+    margin: 0 auto;
+}
+
+.novedades {
+    height: 30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid blue;
+}
+
+.novedades li {
+    display: block;
+    width: 22rem;
+    height: 100%;
+    /* border: 2px solid red; */
+    text-align: center;
+    overflow: hidden;
+}
+
+.novedades li img {
+    /* display: none; */
+    height: 60%;
+}
+
+.numeracion {
+    position: absolute;
+}
+
+.novedades li h6, .novedades li p {
+    text-align: left;
+}
